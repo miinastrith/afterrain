@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #04080d;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navigation .box-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1) a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a {
+    color: #FCFCFC;
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+    color: #C7C7C7;
+}
+
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+
+.heroku {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../../assets/image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+.heroku .box-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroku .box-hero h1 {
+    color: #FCFCFC;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+
+.heroku .box-hero p {
+    text-align: center;
+    color: #FCFCFC;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.heroku .box-hero button {
+    padding: 5px 12px;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    color: #FCFCFC;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.heroku .box-hero button:hover {
+    background-color: #009400;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    user-select: none;
+}
+
+.about .box-about {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    padding: 150px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about .box-about .box:nth-child(1) h1 {
+    color: #FCFCFC;
+    font-weight: 900;
+    font-size : 25px;
+}
+
+.about .box-about .box:nth-child(2) {
+    color: #FCFCFC;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+}
+
+.skill {
+    width: 100%;
+    padding: 100px 0;
+    user-select: none;
+}
+
+.skill h1 {
+    color: #FCFCFC;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+.skill .box-skill {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.skill .box-skill img {
+    width: 150px;
+    height: 150px;
+}
+
+.skill .box-skill .box h4 {
+    color: #fcfcfc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact {
+    width: 100%;
+    padding: 100px 0;
+    user-select: none;
+}
+
+.contact h1 {
+    color: #FCFCFC;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact .box-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.contact .box-contact .box a {
+    text-decoration: none;
+    color: #FCFCFC;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact .box-contact .box a:hover {
+    color: #C7C7C7;
+}
+
+.contact .box-contact .box i {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 990px) {
+    .navigation .box-navigation .box:nth-child(3) {
+        display: block;
+    }
+
+    .navigation .box-navigation .menu {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: #009400;
+        transition: all 0.3s ease;
+    }
+
+    .navigation .box-navigation .menu.menu-active {
+        right: 0;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+        color: white;
+        padding: 60px 30px 0 0;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i.ri-menu-line {
+        color: #FCFCFC;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroku .box-hero .box:nth-child(1) h1 {
+        max-width: 500px;
+        font-size: 2.4rem;
+    }
+
+    .heroku .box-hero .box:nth-child(2) p {
+        font-size: 12px;
+    }
+
+    .skill .box-skill img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .heroku .box-hero .box:nth-child(1) h1 {
+        min-width: 300px;
+        font-size: 2rem;
+    }
+
+    .heroku .box-hero .box:nth-child(2) {
+        width: 300px;
+    }
+
+    .heroku .box-hero .box:nth-child(3) {
+        padding-top: 20px;
+    }
+
+    .about .box-about .box:nth-child(2) {
+        width: 300px;
+    }
+    .skill .box-skill {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contact .box-contact .box i {
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+    }
+}
