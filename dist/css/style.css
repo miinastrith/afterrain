@@ -275,9 +275,15 @@ body::-webkit-scrollbar {
         padding-top: 20px;
     }
 
-    .about .box-about .box:nth-child(2) {
-        width: 300px;
+    .about .box-about .box:nth-child(1) {
+        width: 150px;
+        text-align: center;
     }
+    
+    .about .box-about .box:nth-child(2) {
+        width: 250px;
+    }
+    
     .skill .box-skill {
         display: flex;
         flex-direction: column;
