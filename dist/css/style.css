@@ -285,10 +285,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 425px) {
-    .about .box-about .box:nth-child(1) {
-        width: 300px;
-    }
-
     .contact .box-contact .box i {
         display: flex;
         gap: 30px;
