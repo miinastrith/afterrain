@@ -27,6 +27,7 @@ body::-webkit-scrollbar {
     width: 100%;
     position: fixed;
     z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
 .navigation.scroll-active {
