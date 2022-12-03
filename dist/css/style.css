@@ -29,6 +29,10 @@ body::-webkit-scrollbar {
     z-index: 1000;
 }
 
+.navigation.scroll-active {
+    background-color: #00FF00;
+}
+
 .navigation .box-navigation {
     display: flex;
     justify-content: space-between;
