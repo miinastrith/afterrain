@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="icon" href="assets/image/icon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>AFTERRAIN - Portfolio</title>
 </head>
@@ -44,7 +45,7 @@
             </div>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="zoom-in">
         <div class="container">
             <div class="box-about">
                 <div class="box">
@@ -56,7 +57,7 @@
             </div>
         </div>
     </section>
-    <section class="skill" id="skill">
+    <section class="skill" id="skill" data-aos="zoom-in">
         <div class="container">
             <h1>SKILL</h1>
             <div class="box-skill">
@@ -74,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="zoom-in">
         <div class="container">
             <h1>CONTACT</h1>
             <div class="box-contact">
@@ -97,5 +98,9 @@
         </div>
     </section>
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
