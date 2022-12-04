@@ -219,7 +219,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 990px) {
     .navigation .box-navigation .box:nth-child(3) {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .navigation .box-navigation .menu {
