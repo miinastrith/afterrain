@@ -228,7 +228,7 @@ body::-webkit-scrollbar {
         right: -300px;
         width: 250px;
         height: 100vh;
-        background-color: #009400;
+        background-color: #00FF00;
         transition: all 0.3s ease;
     }
 
